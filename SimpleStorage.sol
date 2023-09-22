@@ -16,7 +16,7 @@ contract SimpleStorage{
     Person[] public ListOfPeople;
     mapping (string=>uint256) public nameTofavoriteNumber;
 
-     function store(uint256 _favoriteNumber) public{
+     function store(uint256 _favoriteNumber) public virtual{
          myfavoriteNumber=_favoriteNumber;
      }
     function retrieve() public view returns(uint256){
